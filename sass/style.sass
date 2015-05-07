@@ -1,0 +1,209 @@
+//colors
+$white: #fff
+$color_nile_blue_approx: #1c3655
+$color_fuchsia_pink_approx: #b463b0
+$color_dove_gray_approx: #706e71
+$color_boulder_approx: #797979
+$color_storm_dust_approx: #666464
+$color_mine_shaft_approx: #303030
+$color_shark_approx: #242424
+
+//fonts
+$font_0: lato-regular
+$font_1: Helvetica
+$font_2: Arial
+$font_3: sans-serif
+$font_4: Times New Roman
+$font_5: Georgia
+$font_6: Serif
+$font_7: lato-bold
+
+//urls
+$url_0: url(img/facilitiesTop.jpg)
+
+//@extend-elements
+%extend_1 
+	margin: 0
+	padding: 0
+	height: 100%
+	width: 100%
+	min-width: 590px
+
+%extend_2 
+	text-decoration: none
+	color: $white
+	font-family: $font_0, $font_1, $font_2, $font_3
+	font-size: 16px
+	letter-spacing: 1px
+
+html, body 
+	@extend %extend_1
+
+.wrapper 
+	max-width: 1100px
+	margin: 0 auto
+	position: relative
+
+header 
+	width: 100%
+	height: 100px
+	.logo 
+		margin-top: 40px
+		float: left
+
+	nav 
+		float: right
+		opacity: 1
+		min-width: 610px
+		ul 
+			margin-top: 40px
+			list-style: none
+			overflow: hidden
+			float: left
+			li 
+				float: left
+				margin-left: 50px
+				a 
+					@extend %extend_2
+					&:hover 
+						border-bottom: 1px solid $white
+
+		.login_btn 
+			@extend %extend_2
+			float: right
+			margin: 30px 0 0 50px
+			padding: 10px 30px 11px
+			border: 2px solid $white
+			&:hover 
+				background: $white
+				color: $color_nile_blue_approx
+
+#selected 
+	border-bottom: 1px solid $white
+
+.facilitiesTop 
+	height: 800px
+	background: $url_0 no-repeat top center
+	background-size: cover
+
+.caption 
+	width: 100%
+	text-align: center
+	color: $white
+	margin-top: 80px
+	h2 
+		color: $white
+		font-family: $font_0, $font_1, $font_2, $font_3
+		font-size: 30px
+		font-weight: lighter
+		margin: 0
+
+	h3 
+		color: $white
+		font-family: $font_0, $font_1, $font_2, $font_3
+		font-size: 18px
+
+	p 
+		font-family: $font_4, $font_5, $font_6
+		font-size: 18px
+
+.listings 
+	padding: 100px 0
+	ul 
+		&.properties_list.two li 
+			display: block
+			height: 30%
+			position: relative
+			float: left
+			width: 50%
+			margin: 0
+
+		li .property_details 
+			width: 87%
+			padding: 3% 6% 4% 6%
+			&.two 
+				height: 100px
+				text-align: center
+				color: $color_storm_dust_approx
+				div 
+					width: 70%
+					margin: 0 auto
+
+				&.pic 
+					height: 200px
+					margin-top: 1px
+					.one 
+						position: absolute
+						right: 0
+						bottom: 0
+
+					.two 
+						position: absolute
+						left: 0
+						bottom: 0
+
+					.three 
+						position: absolute
+						right: 0
+						top: 0
+
+					.four 
+						position: absolute
+						left: 0
+						top: 0
+
+			h1 
+				color: $color_storm_dust_approx
+				font-family: $font_7, $font_1, $font_2, $font_3
+				font-size: 16px
+				font-weight: bold
+
+.footer 
+	width: 100%
+	overflow: hidden
+	background: $color_mine_shaft_approx
+	.address 
+		float: left
+		margin-left: 15%
+
+	.link 
+		float: left
+		margin-left: 15%
+		margin-top: 50px
+		background: $color_mine_shaft_approx
+		font-family: $font_0, $font_1, $font_2, $font_3
+		font-size: 15px
+		a 
+			text-decoration: none
+			color: $white
+
+	.social 
+		float: right
+		margin-right: 10%
+		margin-top: 50px
+		background: $color_mine_shaft_approx
+
+.copyright 
+	width: 100%
+	overflow: hidden
+	background: $color_shark_approx
+	.left 
+		float: left
+		margin-left: 15%
+
+	.right 
+		float: right
+		margin-right: 10%
+
+h2.title 
+	color: $color_fuchsia_pink_approx
+	font-weight: bold
+	margin-top: 0
+
+h3.intro 
+	font-size: 15px
+	line-height: 170%
+	color: $color_dove_gray_approx
+
+p.grey 
+	color: $color_boulder_approx

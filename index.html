@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>John de Laeter Centre</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<!-- header section  -->
+	<section class="hero facilitiesTop">
+		<header>
+			<div class="wrapper">
+				<img class="logo" src="img/logo.png"/>
+				<nav>
+					<ul>
+						<script>generateMenu();</script>
+					</ul>
+					<a href="#" class="login_btn">Contact</a>
+				</nav>
+			</header>
+
+			<section class="caption">
+				<h3 class="caption">(TIMS)</h3>
+				<h2 class="caption">THERMAL IONIZATION MASS SPECTROMETRY FACILITY</h2><br/>
+				<img src="img/video.png"/>
+				<h3 class="caption intro">
+					THIS INSTRUMENT PROVIDES HIGHLY ACCURATE AND PRECISE MEASUREMENTS<br/>
+					OF AN ELEMENT'S ISOTOPIC COMPOSITION, REPRESENTING THE 'GOLD'<br/>
+					STANDARD FOR ISOTOPIC ANALYSIS. THE ISOTOPIC DILUTION TECHNIQUE IS<br/>
+					USED TO MEASURE THE CONCENTRATION OF ELEMENTS IN A MATRIX AND CAN<br/>
+					YIELD THE HIGHEST ACCURACY ACHIEVABLE. 
+				</h3>
+			</section>
+		</section>
+		<!--  end header section  -->
+
+		<!--  APPLICATIONS section  -->
+		<section class="listings">	
+			<h2 class="caption title">APPLICATIONS</h2><br/>
+			<p class="caption grey">
+				The TIMS instrument, in combination with isotope dilution methodology, is<br/>
+				widely used in chemical metrology for the calibration of isotopic standards, and<br/>
+				the calculation of isotopic abundances and atomic weights. 
+			</p>
+			<div class="wrapper">
+				<ul class="properties_list two">
+					<script>
+						generateAppContent();
+						generateAppImage();
+					</script>
+				</ul>
+			</div>
+		</section>
+		<!--  end APPLICATIONS section  -->
+
+		<!--  footer section  -->
+		<div class="footer">
+			<div class="address">
+				<img src="img/address.jpg"/>			
+			</div>
+
+			<div class="link">
+				<script>generateFooterLinks();</script>
+			</div>
+
+			<div class="social">
+				<p style="color:white">Contact to us Via social:</p>
+				<script>generateSocialIcons();</script>
+			</div>
+		</div>
+		<div class="copyright">
+			<img src="img/gramercy.jpg"/ class="left">
+			<img src="img/copywrite.jpg" class="right"/>
+		</div>
+		<!--  end footer section  -->
+	</body>
+	</html>
